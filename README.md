@@ -2,16 +2,6 @@
 
 A no-build, browser-based prototype for the Project Udyam Digital journey. It reads the provided synthetic catalogue, GSTIN/Udyam registries and lead data directly from `../YTL_TrackA_Udyam_Digital_Data/`.
 
-## Run it
-
-From the workspace root, start a local static server:
-
-```sh
-python3 -m http.server 8000
-```
-
-Open [http://localhost:8000/prototype/](http://localhost:8000/prototype/). The browser must be able to reach the sibling data folder; opening `index.html` as a `file://` URL will not load the CSV files.
-
 ## Demo path
 
 1. Answer the five business questions and generate the rules-based shortlist.
