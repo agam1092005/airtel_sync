@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f7f4" />
+  <title>Udyam Digital — Business, made simpler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Udyam Digital home"><span class="brand-mark">u<span>.</span></span><span>udyam<span class="brand-light">digital</span></span></a>
+      <div class="workspace-label">YOUR WORKSPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="journey"><span class="nav-icon">◉</span> Get connected <span class="nav-count">01</span></button>
+        <button class="nav-item" data-page="tracker"><span class="nav-icon">◷</span> Order tracker</button>
+        <button class="nav-item" data-page="partner"><span class="nav-icon">▤</span> Partner desk <span class="nav-badge">TEAM</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">✳</div><strong>Need a hand?</strong><p>Our small business team is here to help.</p><a href="mailto:help@udyamdigital.example">Talk to an advisor <span>↗</span></a></div>
+        <div class="profile"><div class="avatar">AR</div><div><strong>Demo workspace</strong><small>Accel Business</small></div><span class="profile-more">···</span></div>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="crumb"><span>Workspace</span><b>/</b><strong id="crumb-current">Get connected</strong></div><div class="top-actions"><span class="secure"><i></i> Secure journey</span><button class="lang-select" id="languageTop">EN <span>⌄</span></button><button class="icon-button" aria-label="Notifications">♧<i class="notification-dot"></i></button></div></header>
+      <div class="page-wrap" id="page-journey">
+        <div class="hero-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> BUSINESS, MADE SIMPLER</div><h1>Everything your business<br><em>needs to move forward.</em></h1><p class="hero-copy">Tell us a little about your business. We’ll find the right connection and tools, all in one place.</p></div><div class="hero-art"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-card"><div class="art-card-head"><span>YOUR BUSINESS, CONNECTED</span><span class="art-live"><i></i> LIVE</span></div><div class="art-lines"><i></i><i></i><i></i></div><div class="art-tiles"><b>⌁</b><b>▣</b><b>✳</b></div><div class="art-spark">✦</div></div><div class="art-sticker">LESS ADMIN.<br><strong>MORE YOU.</strong></div><div class="art-leaf leaf-a">✳</div><div class="art-leaf leaf-b">✳</div></div></div>
+        <div class="journey-layout">
+          <section class="journey-card">
+            <div class="stepper"><div class="step active" data-step-indicator="1"><span>01</span><b>Tell us about you</b></div><div class="step-rail"></div><div class="step" data-step-indicator="2"><span>02</span><b>Your recommendation</b></div><div class="step-rail"></div><div class="step" data-step-indicator="3"><span>03</span><b>Business verification</b></div></div>
+            <div id="advisor-view">
+              <div class="form-intro"><div><div class="section-kicker">A FEW QUICK QUESTIONS</div><h2>Let’s get to know your business.</h2><p>Just five quick questions. No sales call, no jargon.</p></div><div class="time-pill">◷ &nbsp; ABOUT 2 MIN</div></div>
+              <div class="question-grid">
+                <label class="field"><span>What kind of business do you run?</span><select id="businessType"><option value="micro">Retail or local service</option><option value="professional">Clinic, CA or coaching office</option><option value="multi">Restaurant or multiple stores</option><option value="manufacturer">Small manufacturing</option></select></label>
+                <label class="field"><span>How many people work with you?</span><select id="employees"><option value="1">Just me</option><option value="3" selected>2–5 people</option><option value="8">6–10 people</option><option value="15">11–25 people</option></select></label>
+                <label class="field"><span>How many locations?</span><select id="sites"><option value="1">One location</option><option value="2">2 locations</option><option value="3">3–5 locations</option><option value="6">6 or more</option></select></label>
+                <label class="field"><span>Where is your business?</span><select id="city"><option value="Kochi">Kochi</option><option value="Mumbai">Mumbai</option><option value="Delhi">Delhi</option><option value="Bengaluru">Bengaluru</option><option value="Chennai">Chennai</option><option value="Pune">Pune</option><option value="Jaipur">Jaipur</option><option value="Other">Other city</option></select></label>
+                <label class="field"><span>Do you have a GSTIN?</span><select id="hasGstin"><option value="no">Not right now</option><option value="yes">Yes, I have one</option><option value="later">I’m not sure</option></select></label>
+              </div>
+              <div class="form-foot"><span class="privacy-hint"><span class="mini-lock">♧</span> Your answers are only used to find a suitable plan.</span><button class="button button-primary" id="recommendBtn">Find my plan <span>→</span></button></div>
+            </div>
+            <div id="recommendation-view" class="hidden"></div>
+            <div id="kyc-view" class="hidden"></div>
+          </section>
+          <aside class="trust-column"><div class="trust-top"><div class="trust-icon">✦</div><div class="section-kicker">A BETTER WAY TO CONNECT</div><h3>One simple journey.<br><em>Everything in place.</em></h3><p>Built around the way small businesses actually work.</p></div><div class="benefit"><div class="benefit-icon green">◷</div><div><strong>No waiting on a quote</strong><p>See your options and price right away.</p></div></div><div class="benefit"><div class="benefit-icon blue">⌁</div><div><strong>One clear monthly bill</strong><p>Connection, tools and support together.</p></div></div><div class="benefit"><div class="benefit-icon yellow">♧</div><div><strong>You stay in control</strong><p>We only ask for documents when you’re ready.</p></div></div><div class="testimonial"><div class="quote-mark">“</div><p>Finally, I can sort my internet and business tools without losing a day at the shop.</p><div class="quote-person"><div class="avatar small">NS</div><div><strong>Neha S.</strong><span>Independent retailer, Kochi</span></div><div class="stars">★★★★★</div></div></div></aside>
+        </div>
+        <footer class="page-footer"><span>© 2026 Accel Business <b>·</b> Built for the businesses that keep India moving.</span><span><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="mailto:help@udyamdigital.example">Help</a></span></footer>
+      </div>
+      <div class="page-wrap hidden" id="page-tracker"></div>
+      <div class="page-wrap hidden" id="page-partner"></div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
