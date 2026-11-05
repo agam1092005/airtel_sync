@@ -1,6 +1,6 @@
 # Udyam Digital prototype
 
-A no-build, browser-based prototype for the Project Udyam Digital journey. It reads the provided synthetic catalogue, GSTIN/Udyam registries and lead data directly from `../YTL_TrackA_Udyam_Digital_Data/`.
+A no-build, browser-based prototype for the Project Udyam Digital journey. The synthetic catalogue, GSTIN/Udyam registries, lead data and KYC specimen images are bundled in `data/`, so the deployed static site can load them from its own origin.
 
 ## Demo path
 
@@ -14,6 +14,6 @@ A no-build, browser-based prototype for the Project Udyam Digital journey. It re
 
 - Bundle eligibility, catalogue starting prices, minimum terms and per-site quantities are computed from the supplied catalogue. Product eligibility is checked before showing a recommendation.
 - Registry checks use the supplied CSVs in the browser. KYC extraction, e-sign, payment, partner notification, address-level network feasibility and installation updates are simulations; there is no external API or GenAI call.
-- Documents are not uploaded or retained by a server. Selected specimen files are read by filename and local availability; the local files remain in the provided data folder. The demo order is stored in browser `localStorage`.
+- Documents are not uploaded or retained by a server. Selected specimen files are read by filename and local availability; the specimen files are served from the bundled `data/kyc_documents/` folder. The demo order is stored in browser `localStorage`.
 - Partner desk scores are illustrative placeholders, not the model/AUC described in the business-case PDF.
 - The interface can be switched between English and Hindi with the language control in the top bar. Business names and some catalogue-specific names remain as supplied in the source data.

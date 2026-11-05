@@ -1,5 +1,5 @@
 /* Project Udyam Digital prototype. Registry, KYC OCR, payment and fulfillment are mocked locally. */
-const DATA='../YTL_TrackA_Udyam_Digital_Data/';
+const DATA='./data/';
 const state={page:'journey',step:1,answers:{type:'micro',employees:3,sites:1,city:'Kochi',hasGstin:'no'},catalog:[],gst:[],udyam:[],leadRows:[],bundle:'dukaan',addons:new Set(),consented:false,gstResult:null,udyamResult:null,files:{},order:JSON.parse(localStorage.getItem('udyam-order')||'null'),demoApplicant:'',language:localStorage.getItem('udyam-language')||'EN'};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const originals=new WeakMap();
